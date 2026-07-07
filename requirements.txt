@@ -1,0 +1,13 @@
+# AI Smart Car Access System — dependencies
+# Install with:  pip install -r requirements.txt
+
+opencv-python>=4.8.0,<5  # webcam capture + face detection (v5 removed CascadeClassifier)
+numpy>=1.24.0            # image arrays
+Pillow>=10.0.0           # show camera frames inside Tkinter
+
+# --- AI age estimation (skip these if you only use --demo mode) ---
+deepface>=0.0.90         # pre-trained age estimation model
+tf-keras>=2.16.0         # required by DeepFace with TensorFlow 2.16+
+
+# Note: Tkinter comes bundled with Python — no pip install needed.
+# On Linux only, you may need:  sudo apt install python3-tk
